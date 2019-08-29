@@ -1,0 +1,21 @@
+//公用
+
+@function rem($offset) {
+    @return $offset / 32 + rem;
+}
+
+@mixin fontSet($fontSize,$lineHeight,$color,$align){
+    font-size:$fontSize;
+    line-height: $lineHeight;
+    color:$color;
+    @if $align != '' {
+        text-align: $align;
+    }
+   
+}
+
+@mixin textOverflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
