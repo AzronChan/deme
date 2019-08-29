@@ -38,7 +38,9 @@ module.exports = {
     "no-unused-vars": 0,
 
     //禁止使用console
-    "no-console": process.env.NODE_ENV === "prod" ? 2 : 0,
+    // "no-console": process.env.NODE_ENV === "prod" ? 2 : 0,
+    "no-console": 0,
+
 
     // 禁止使用debugger
     "no-debugger": process.env.NODE_ENV === "prod" ? 2 : 0,

@@ -3,7 +3,7 @@ module.exports = {
     HTMLDirs: ['index'],
     cssPublicPath: '../',
     imgOutputPath: 'img/',
-    cssOutputPath: './css/[name].[md5:contenthash:hex:8].css',
+    cssOutputPath: './css/[name].css',
     assetOutputPath: 'asset/',
     devServerOutputPath: './dist',
     pcSprite: ['src/images/icon_*.png', 'src/images/bg_*.png'], // PC端雪碧图命名

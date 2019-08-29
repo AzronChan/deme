@@ -1,21 +1,53 @@
 //公用
 
+/*计算rem*/
 @function rem($offset) {
-    @return $offset / 32 + rem;
+  @return $offset / 32 + rem;
 }
 
-@mixin fontSet($fontSize,$lineHeight,$color,$align){
-    font-size:$fontSize;
-    line-height: $lineHeight;
-    color:$color;
-    @if $align != '' {
-        text-align: $align;
-    }
-   
+/*设置字体*/
+@mixin fontSet($fontSize, $lineHeight, $color, $align) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  @if $align != "" {
+    text-align: $align;
+  }
 }
 
+/*单行文字超出隐藏*/
 @mixin textOverflow {
-    white-space: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * @param $line       超出显示省略号的行数，默认：1
+ * @param $substract  为预留区域百分比%，默认：0
+ */
+ @mixin text-overflow($line: 1, $substract: 0) {
     overflow: hidden;
-    text-overflow: ellipsis;
+    @if $line==1 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100% - $substract;
+    }
+    @else {
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/*清除浮动*/
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }

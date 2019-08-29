@@ -4,7 +4,7 @@ const path = require('path');
 // 引入 webpack-merge 插件
 const webpackMerge = require('webpack-merge');
 // 清理 dist 文件夹
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // 抽取 css
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // 引入 webpack
@@ -50,14 +50,8 @@ module.exports = webpackMerge(webpackBase, {
                             loader: 'css-loader',
                             options: {
                                 // 开启 css 压缩
-                                minimize: true,
+                                // minimize: true,
                             },
-                        },
-                        {
-                            loader: 'postcss-loader',
-                        },
-                        {
-                            loader: 'less-loader',
                         },
                         {
                             loader: 'sass-loader',
@@ -77,6 +71,6 @@ module.exports = webpackMerge(webpackBase, {
             name: 'commons.bundle.js',
         }),
         // 自动清理 dist 文件夹
-        new CleanWebpackPlugin(['./dist'], { root: path.resolve(__dirname, '../') }),
+        new CleanWebpackPlugin(),
     ],
 });

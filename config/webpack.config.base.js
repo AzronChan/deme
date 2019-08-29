@@ -28,7 +28,7 @@ module.exports = {
     entry: Entries,
     devtool: 'cheap-module-source-map',
     output: {
-        filename: 'js/[name].bundle.[hash].js',
+        filename: 'js/[name].js',
         path: path.resolve(__dirname, '../dist'),
     },
     // 加载器
