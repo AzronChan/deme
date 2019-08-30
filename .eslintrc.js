@@ -75,6 +75,9 @@ module.exports = {
     // 规定require 只能require 字符串
     "import/no-dynamic-require" : 0,
 
+    //
+    "import/prefer-default-export" : 0,
+
     "consistent-return" : 0,
 
     indent: 0,

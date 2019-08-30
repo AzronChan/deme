@@ -19,6 +19,7 @@ module.exports = webpackMerge(webpackBase, {
     optimization: {
         minimize: true,
     },
+
     module: {
         rules: [
             {
@@ -71,6 +72,6 @@ module.exports = webpackMerge(webpackBase, {
             name: 'commons.bundle.js',
         }),
         // 自动清理 dist 文件夹
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
     ],
 });

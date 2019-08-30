@@ -1,15 +1,12 @@
 import './css/common.scss';
-// /**
-//  * @desc webpack打包入口文件
-//  */
-const moduleExports = {};
+
+const DEME = {}; // DEME变量名不可改，因为全局输出就是这个名字，在window下
 
 const module = require.context('./', true, /^\.\/module.+\/.+\.js$/);
 
 module.keys().forEach((key) => {
     const attr = key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.'));
-    moduleExports[attr] = module(key);
+    DEME[attr] = module(key);
 });
 
-console.log(moduleExports);
-module.exports = moduleExports;
+export { DEME };
