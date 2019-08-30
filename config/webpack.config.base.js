@@ -23,7 +23,6 @@ config.HTMLDirs.forEach((page) => {
   Entries[page] = path.resolve(__dirname, `../src/${page}.js`);
 });
 
-console.log(Entries);
 module.exports = {
   entry: Entries,
   devtool: 'cheap-module-source-map',

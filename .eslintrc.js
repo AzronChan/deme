@@ -78,6 +78,10 @@ module.exports = {
     //
     "import/prefer-default-export" : 0,
 
+    "import/no-mutable-exports" : 0,
+
+    "no-restricted-properties" : 0,
+
     "consistent-return" : 0,
 
     indent: 0,
