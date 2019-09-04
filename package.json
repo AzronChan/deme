@@ -1,17 +1,17 @@
 {
-  "name": "deme",
+  "name": "Deme",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "由日常使用的JS方法和SCSS方法组成的前端业务代码工具库",
+  "keywork": "Deme 组件库 工具类",
+  "main": "dist/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod webpack -p",
     "lint": "cross-env NODE_ENV=lint webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/changeLong/deme.git"
+    "url": "https://github.com/changeLong/deme.git"
   },
   "author": "chenzhaolong",
   "license": "ISC",
@@ -20,6 +20,13 @@
   },
   "homepage": "https://github.com/changeLong/deme#readme",
   "dependencies": {
+    
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "eslint": "^6.2.2",
+    "eslint-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^7.1.5",
@@ -43,11 +50,5 @@
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "eslint": "^6.2.2",
-    "eslint-loader": "^3.0.0",
-    "html-loader": "^0.5.5"
   }
 }
