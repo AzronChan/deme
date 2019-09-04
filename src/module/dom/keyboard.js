@@ -6,7 +6,7 @@
  * @param {Function} upCb 当软键盘弹起的回调
  */
 
-function windowResize(downCallback, upCallback) {
+function keyBoard(downCallback, upCallback) {
   const clientHeight = window.innerHeight;
   const downCb = typeof downCallback === 'function' ? downCallback : function () {};
   const upCb = typeof upCallback === 'function' ? upCallback : function () {};
@@ -21,4 +21,4 @@ function windowResize(downCallback, upCallback) {
   });
 }
 
-module.exports = windowResize;
+module.exports = keyBoard;

@@ -1,5 +1,4 @@
-# Deme
-
+# :package: Deme 
 
 由日常使用的JS方法和SCSS方法组成的**前端业务代码工具库**；
 
@@ -7,7 +6,7 @@
 
 避免在不同的项目中用相同的方法，需要复制粘贴的麻烦，构建一个工具库并且发布npm， 通过安装的方式提高效率;
 
-## 安装使用
+## :hammer: 安装使用
 
 1. 直接下载`dist/js/index.js`使用,暴露在window.Deme;
 2. 使用`npm`安装,支持umd通用模块规范；
@@ -22,7 +21,7 @@
 
 - node
 
-```
+``` javascript
 npm install --save-dev Deme
 
 //完整引入
@@ -35,7 +34,55 @@ import { simpleAdd } from 'Deme'
 
 **推荐使用按需引入**
 
-## API
+## :wrench: API
+
+### 数组
+
+- [数组排重](src/module/array/unique.js)
+- [冒泡算法](src/module/array/bubbleSort.js)
+- [判断是否数组](src/module/array/isArray.js)
+
+### cookie
+
+- [cookie读写封装](src/module/Cookie/Cookie.js)
+
+### UA
+
+- [获取系统](src/module/device/getOs.js)
+- [获取设备浏览器](src/module/device/UA.js)
+
+### dom操作
+
+- [深度克隆](src/module/dom/deepClone.js)
+- [H5软键盘缩回、弹起回调](src/module/dom/keyBoard.js)
+- [返回节点在当前屏幕的位置](src/module/dom/offset.js)
+
+### Number
+
+- [返回数字相加相减](src/module/handleNum/handleNum.js)
+
+## Object
+
+- [判断是否空数组](src/module/object/isEmptyObject.js)
+- [判断对象类型](src/module/object/cheakTypeObject.js)
+
+## 正则
+
+- [判断是否邮件格式](src/module/Regexp/testMail.js)
+- [判断是否手机号码格式](src/module/Regexp/testTel.js)
+
+## url
+
+- [url参数转对象](src/module/url/getSearchData.js)
+
+## :art: scss 
+
+### [通用样式](src/css/common.scss)
+
+## TODO
+
+- [ ] 自动化测试
+- [ ] 业务组件
 
 
 
