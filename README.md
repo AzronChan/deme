@@ -30,6 +30,11 @@ import Deme from 'Deme';
 
 //按需引入 
 import { simpleAdd } from 'Deme'
+simpleAdd(0.01,0.03);
+
+//commonjs
+const { simpleAdd } = require('./Deme');
+simpleAdd(0.01,0.03);
 ```
 
 **推荐使用按需引入**
@@ -78,6 +83,11 @@ import { simpleAdd } from 'Deme'
 ## :art: scss 
 
 ### [通用样式](src/css/common.scss)
+
+- 单行或者多行文字超出省略符
+- 快速设置字体(如果编辑器有自定义代码段落，当我没说:satisfied:)
+- 计算px对应的rem值
+
 
 ## TODO
 

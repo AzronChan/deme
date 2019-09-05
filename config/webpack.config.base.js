@@ -31,6 +31,7 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     library: 'Deme',
     libraryTarget: 'umd', // umd模式打包
+    globalObject: 'this',
   },
   // 加载器
   module: {
