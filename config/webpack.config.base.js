@@ -29,6 +29,7 @@ module.exports = {
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, '../dist'),
+    library: 'Deme',
     libraryTarget: 'umd', // umd模式打包
   },
   // 加载器

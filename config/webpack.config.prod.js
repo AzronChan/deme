@@ -71,6 +71,11 @@ module.exports = webpackMerge(webpackBase, {
             maxInitialRequests: 3,
             name: 'commons.bundle.js',
         }),
+        // new webpack.BannerPlugin({
+        //     banner: `console.log("${new Date().toString()}");const buildTime = "${new Date().toString()}";`,
+        //     raw: true,
+        //     test: /\.js$/,
+        // }),
         // 自动清理 dist 文件夹
         // new CleanWebpackPlugin(),
     ],
