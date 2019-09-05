@@ -1,6 +1,6 @@
 {
   "name": "deme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "由日常使用的JS方法和SCSS方法组成的前端业务代码工具库",
   "keywork": "Deme 组件库 工具类",
   "main": "dist/js/index.js",
@@ -19,9 +19,7 @@
     "url": "https://github.com/changeLong/deme/issues"
   },
   "homepage": "https://github.com/changeLong/deme#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "eslint": "^6.2.2",
