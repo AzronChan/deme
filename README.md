@@ -13,7 +13,7 @@
 
 - 浏览器
 ```
-<script https://github.com/changeLong/deme/blob/master/="Deme.js"></script>
+<script https://github.com/changeLong/deme/blob/master/src="Deme.js"></script>
 <script>
     Deme.simpleAdd(0.01,0.03)
 </script>
@@ -43,46 +43,46 @@ simpleAdd(0.01,0.03);
 
 ### 数组
 
-- [数组排重](/changeLong/deme/blob/master/https://github.com/changeLong/deme/blob/master//module/array/unique.js)
-- [冒泡算法](https://github.com/changeLong/deme/blob/master//module/array/bubbleSort.js)
-- [判断是否数组](https://github.com/changeLong/deme/blob/master//module/array/isArray.js)
+- [数组排重](https://github.com/changeLong/deme/blob/master/src/module/array/unique.js)
+- [冒泡算法](https://github.com/changeLong/deme/blob/master/src/module/array/bubbleSort.js)
+- [判断是否数组](https://github.com/changeLong/deme/blob/master/src/module/array/isArray.js)
 
 ### cookie
 
-- [cookie读写封装](https://github.com/changeLong/deme/blob/master//module/Cookie/Cookie.js)
+- [cookie读写封装](https://github.com/changeLong/deme/blob/master/src/module/Cookie/Cookie.js)
 
 ### UA
 
-- [获取系统](https://github.com/changeLong/deme/blob/master//module/device/getOs.js)
-- [获取设备浏览器](https://github.com/changeLong/deme/blob/master//module/device/UA.js)
+- [获取系统](https://github.com/changeLong/deme/blob/master/src/module/device/getOs.js)
+- [获取设备浏览器](https://github.com/changeLong/deme/blob/master/src/module/device/UA.js)
 
 ### dom操作
 
-- [深度克隆](https://github.com/changeLong/deme/blob/master//module/dom/deepClone.js)
-- [H5软键盘缩回、弹起回调](https://github.com/changeLong/deme/blob/master//module/dom/keyBoard.js)
-- [返回节点在当前屏幕的位置](https://github.com/changeLong/deme/blob/master//module/dom/offset.js)
+- [深度克隆](https://github.com/changeLong/deme/blob/master/src/module/dom/deepClone.js)
+- [H5软键盘缩回、弹起回调](https://github.com/changeLong/deme/blob/master/src/module/dom/keyBoard.js)
+- [返回节点在当前屏幕的位置](https://github.com/changeLong/deme/blob/master/src/module/dom/offset.js)
 
 ### Number
 
-- [返回数字相加相减](https://github.com/changeLong/deme/blob/master//module/handleNum/handleNum.js)
+- [返回数字相加相减](https://github.com/changeLong/deme/blob/master/src/module/handleNum/handleNum.js)
 
 ### Object
 
-- [判断是否空数组](https://github.com/changeLong/deme/blob/master//module/object/isEmptyObject.js)
-- [判断对象类型](https://github.com/changeLong/deme/blob/master//module/object/cheakTypeObject.js)
+- [判断是否空数组](https://github.com/changeLong/deme/blob/master/src/module/object/isEmptyObject.js)
+- [判断对象类型](https://github.com/changeLong/deme/blob/master/src/module/object/cheakTypeObject.js)
 
 ### 正则
 
-- [判断是否邮件格式](https://github.com/changeLong/deme/blob/master//module/Regexp/testMail.js)
-- [判断是否手机号码格式](https://github.com/changeLong/deme/blob/master//module/Regexp/testTel.js)
+- [判断是否邮件格式](https://github.com/changeLong/deme/blob/master/src/module/Regexp/testMail.js)
+- [判断是否手机号码格式](https://github.com/changeLong/deme/blob/master/src/module/Regexp/testTel.js)
 
 ### url
 
-- [url参数转对象](https://github.com/changeLong/deme/blob/master//module/url/getSearchData.js)
+- [url参数转对象](https://github.com/changeLong/deme/blob/master/src/module/url/getSearchData.js)
 
 ## :art: scss 
 
-### [通用样式](https://github.com/changeLong/deme/blob/master//css/common.scss)
+### [通用样式](https://github.com/changeLong/deme/blob/master/src/css/common.scss)
 
 - 单行或者多行文字超出省略符
 - 快速设置字体(如果编辑器有自定义代码段落，当我没说:satisfied:)
