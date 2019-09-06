@@ -5,10 +5,7 @@
  * @param {Object} str
  */
 function testMail(str) {
-  if (
-    str.match(/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/g)
-  ) { return true; }
-  return false;
+  return (/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/g).test(str);
 }
 
 module.exports = testMail;
