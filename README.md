@@ -85,8 +85,25 @@ simpleAdd(0.01,0.03);
 ### [通用样式](https://github.com/changeLong/deme/blob/master/src/css/common.scss)
 
 - 单行或者多行文字超出省略符
+```
+@include textOverflow;
+```
 - 快速设置字体(如果编辑器有自定义代码段落，当我没说:satisfied:)
+```
+@include fontSet(font-size,line-height,color,text-align);
+@include fontSet(16px,32px,#000,center);
+```
 - 计算px对应的rem值
+```
+@include rem(16px)
+```
+- 1px边框，适配两倍屏，三倍屏
+```
+//scss
+@include thinBorder((left,top),red,5px);
+//class
+.thin-border
+```
 
 
 ## TODO
