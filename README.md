@@ -64,7 +64,11 @@ simpleAdd(0.01,0.03);
 
 ### Number
 
-- [返回数字相加相减](https://github.com/changeLong/deme/blob/master/src/module/handleNum/handleNum.js)
+- [返回数字相加相减相乘](https://github.com/changeLong/deme/blob/master/src/module/handleNum/handleNum.js)
+
+取12位精度，要再高精度得用第三方库了，如math.js等
+
+当然高进度的运算速度肯定不如内置的，看自己舍弃了；
 
 ### Object
 

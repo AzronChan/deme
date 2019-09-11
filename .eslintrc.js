@@ -104,6 +104,8 @@ module.exports = {
     // 包含注释的情况下允许
     "no-empty-function": 2,
 
+    "no-empty":0,
+
     // 不允许匿名函数
     // @off 不限制
     "func-names": 0,
