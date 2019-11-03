@@ -1,6 +1,6 @@
 {
   "name": "deme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "由日常使用的JS方法和SCSS方法组成的前端业务代码工具库",
   "keywork": "Deme 组件库 工具类",
   "main": "dist/js/index.js",
