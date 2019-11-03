@@ -9,6 +9,4 @@ function cheakTypeObject(obj, type) {
     return Object.prototype.toString.call(obj) === `[object ${type}]`;
 }
 
-export {
-    cheakTypeObject,
-};
+module.exports = cheakTypeObject;
