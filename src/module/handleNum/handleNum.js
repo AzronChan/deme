@@ -11,7 +11,6 @@ function strip(num, precision = 12) {
  * @param {Number} num
  */
 function digitLength(num) {
-  // Get digit length of e
   const eSplit = num.toString().split(/[eE]/);
   const len = (eSplit[0].split('.')[1] || '').length - (+(eSplit[1] || 0));
   return len > 0 ? len : 0;
@@ -52,6 +51,12 @@ function handleNum({ action = 'add', num = [] }) {
   if (num.length < 1) {
     return num[0] ? num[0] : 0;
   }
+  num = num.map((item) => {
+    if (!item) {
+      return 0;
+    }
+    return item;
+  });
   let arr = num.map((item) => digitLength(item));// 获取全部数字的小数点长度，此处可能会有科学计数，使用digitLength方法
   m = Math.pow(10, Math.max(...arr)); // 使用 Math.pow 获取倍数
   arr = num.map((item) => mul(item, m)); // 返回所有数字的整数

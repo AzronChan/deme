@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod webpack -p",
-    "lint": "cross-env NODE_ENV=lint webpack-dev-server --open"
+    "lint": "cross-env NODE_ENV=lint webpack-dev-server --open",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,24 +20,29 @@
     "url": "https://github.com/changeLong/deme/issues"
   },
   "homepage": "https://github.com/changeLong/deme#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.6",
+    "jest": "^24.9.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "eslint": "^6.2.2",
-    "eslint-loader": "^3.0.0",
-    "html-loader": "^0.5.5",
-    "babel-core": "^6.26.3",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
     "babel-eslint": "^10.0.3",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^5.2.0",
     "css-loader": "^3.2.0",
+    "eslint": "^6.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.0",
     "eslint-plugin-import": "^2.18.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
@@ -44,9 +50,10 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.3",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
   }
 }
+``
