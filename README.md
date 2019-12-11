@@ -22,7 +22,7 @@
 - node
 
 ``` javascript
-npm install --save-dev Deme
+npm install --save-dev deme
 
 //完整引入
 import deme from 'deme';
