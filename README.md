@@ -8,14 +8,14 @@
 
 ## :hammer: 安装使用
 
-1. 直接下载`dist/js/index.js`使用,暴露在window.Deme;
+1. 直接下载`dist/js/index.js`使用,暴露在window.deme;
 2. 使用`npm`安装,支持umd通用模块规范；
 
 - 浏览器
 ```
-<script https://github.com/changeLong/deme/blob/master/src="Deme.js"></script>
+<script src="/dist/js/index.js"></script>
 <script>
-    Deme.simpleAdd(0.01,0.03)
+    deme.simpleAdd(0.01,0.03)
 </script>
 ```
 
