@@ -1,4 +1,4 @@
-# :package: Deme 
+# :package: deme 
 
 由日常使用的JS方法和SCSS方法组成的**前端业务代码工具库**；
 
@@ -25,15 +25,15 @@
 npm install --save-dev Deme
 
 //完整引入
-import Deme from 'Deme';
+import deme from 'deme';
 @import './deme.scss'
 
 //按需引入 
-import { simpleAdd } from 'Deme'
+import { simpleAdd } from 'deme'
 simpleAdd(0.01,0.03);
 
 //commonjs
-const { simpleAdd } = require('./Deme');
+const { simpleAdd } = require('./deme');
 simpleAdd(0.01,0.03);
 ```
 
