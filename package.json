@@ -21,10 +21,11 @@
   },
   "homepage": "https://github.com/changeLong/deme#readme",
   "dependencies": {
-    "@babel/polyfill": "^7.7.0",
-    "@babel/runtime": "^7.7.6"
+    
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.6",
     "jest": "^24.9.0",
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
